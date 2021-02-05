@@ -36,3 +36,4 @@ root                    (project root folder)
 ---
 * TODO: Add your names and emails here
 * Porter Mecham porterme@byui.edu
+* Zach Wilson zachwil99@byui.edu
