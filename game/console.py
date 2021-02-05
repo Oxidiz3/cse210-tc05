@@ -1,5 +1,5 @@
 
-class Jumper():
+class Console():
 	def get_letter():
 		guess = input("Guess a letter [a-z]: ")
 		return guess
