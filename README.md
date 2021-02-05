@@ -36,3 +36,4 @@ root                    (project root folder)
 ---
 * TODO: Add your names and emails here
 * Porter Mecham porterme@byui.edu
+* Lauren Sorenson sor18014@byui.edu
