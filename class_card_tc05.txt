@@ -1,0 +1,20 @@
+Director
+	knows num_wrong_guesses
+	knows guess
+	knows game_over
+	knows word
+
+	Calls Functions
+	Directs variables where they need to go
+
+Console
+	Gets letter
+	prints to console
+
+Word
+	selects_word
+	check if letter is in word
+
+Jumper
+	puts letter in guess line
+	destroys parachute
