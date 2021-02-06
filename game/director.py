@@ -1,4 +1,4 @@
-import console
+from console import Console
 
 
 class Director():
@@ -11,17 +11,21 @@ class Director():
 		'''Intializes the variables for the class.'''
 		
 		#Intializes the classes.
-		self.console = console()
+		self.console = Console()
+		'''
 		self.word = Word()
 		self.jumper = Jumper()
+		'''
 
 		#Intializes the global variables for the director class.
 		self.keep_playing = True
+		'''
 		self.secret_word = self.word.select_word()
+		'''
 		self.guess = ''
 		self.wrong_guess = 0
 		self.word_list = ['_', '_', '_', '_', '_']
-		self.jumper_list = [" ___", "/___\ ", "\   / ", " \ / ", "  0", " /|\ ", " / \ ", "", "^^^^^^^"]
+		self.jumper_list = ["   ___", r"  /___\ ", r"  \   / ", r"   \ / ", "    0", r"   /|\ ", r"   / \ ", "", " ^^^^^^^"]
 	
 	def start_game(self):
 
@@ -37,7 +41,8 @@ class Director():
 		'''Prints off the word list and the jumper and gets the
 		   user's input.'''
 
-		self.console.print(self.word_list)
+		for letter in self.word_list:
+			print(letter, end=' ')
 		print('' * 2)
 		self.display_jumper(self.jumper_list)
 		print('')
@@ -60,11 +65,15 @@ class Director():
 	def do_output(self):
 		if self.wrong_guess == 4:
 			self.keep_playing = False
-			self.jumper_list[0] = "  X"
+			self.jumper_list[0] = "    X"
 			self.display_jumper(self.jumper_list)
 		else:
 			pass
 
-	def display_jumper(jump_list):
+	def display_jumper(self, jump_list):
 		for part in jump_list:
 			self.console.print(part)
+
+director = Director()
+
+director.get_input()
