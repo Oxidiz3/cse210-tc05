@@ -1,4 +1,6 @@
-from word import Word
+#Weston Ford
+#class: CSE 210
+#instructor: Adam Hayes
 
 class Jumper:
     def __init__(self): 
