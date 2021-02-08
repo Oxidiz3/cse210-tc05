@@ -3,7 +3,7 @@ class Console():
 	'''The Console class takes input from the user and
 	prints strings to the console
 	'''
-	def get_letter() -> str:
+	def get_letter(self) -> str:
 		'''Gets input from the user
 
 		Returns:
@@ -12,7 +12,7 @@ class Console():
 		guess = input("Guess a letter [a-z]: ")
 		return guess
 
-	def print(print_string: str):
+	def print(self, print_string: str):
 		'''Takes string and prints it to the console
 
 		Args:
